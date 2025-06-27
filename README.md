@@ -1,50 +1,125 @@
-# Welcome to your Expo app 👋
+# Ride Booking Mobile App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native mobile application for connecting riders and customers for ride booking services.
 
-## Get started
+![Ride Booking App](./src/assets/images/rider_logo.png)
 
-1. Install dependencies
+## Overview
 
-   ```bash
-   npm install
-   ```
+This ride booking application provides a platform for two types of users:
+- **Riders**: Drivers who offer transportation services
+- **Customers**: Users who book rides to their destinations
 
-2. Start the app
+The app features a simple and intuitive UI with role-based access, allowing users to register as either riders or customers.
 
-   ```bash
-   npx expo start
-   ```
+## Features
 
-In the output, you'll find options to open the app in a
+### Current Features
+- Role selection screen (Rider or Customer)
+- Phone number-based registration for both user types
+- Responsive UI that works across different device sizes
+- Simple state-based navigation
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Planned Features
+- User profiles and history
+- Real-time ride tracking
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
+## Technology Stack
 
-When you're ready, run:
+- **Framework**: React Native with Expo
+- **UI Components**: Native components styled with StyleSheet
+- **State Management**: React Hooks 
+- **Navigation**: Custom state-based navigation
+- **Assets**: Local images and custom styling
 
-```bash
-npm run reset-project
+## Project Structure
+
+```
+frontend_ride_booking/
+├── src/
+│   ├── app/           # Expo Router files (not currently used)
+│   ├── assets/
+│   │   ├── fonts/     # Custom fonts
+│   │   ├── icons/     # App icons
+│   │   └── images/    # Images used in the app
+│   ├── styles/        # Style definitions
+│   ├── utils/         # Utility functions and constants
+│   └── App.js         # Main application entry point
+├── app.json           # Expo configuration
+├── package.json       # Dependencies and scripts
+└── README.md          # Project documentation
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Getting Started
 
-## Learn more
+### Prerequisites
+- Node.js (v14 or later)
+- npm 
+- Expo CLI
+- Android Studio (for Android development) or Xcode (for iOS development)
 
-To learn more about developing your project with Expo, look at the following resources:
+### Installation
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+1. Clone the repository
+```bash
+git clone https://github.com/tahir-sigmadevelopers/frontend_ride_booking.git
+cd frontend_ride_booking
+```
 
-## Join the community
+2. Install dependencies
+```bash
+npm install
+```
 
-Join our community of developers creating universal apps.
+3. Start the development server
+```bash
+npm start
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```
+
+4. Run on a device or emulator
+- Scan the QR code with the Expo Go app (Android) or Camera app (iOS)
+- Press 'a' to run on Android emulator
+- Press 'i' to run on iOS simulator
+
+## Usage
+
+1. Launch the app
+2. Choose your role (Rider or Customer)
+3. Enter your phone number to register
+4. Follow the on-screen instructions
+
+## Development
+
+### Adding New Screens
+
+To add a new screen:
+1. Create a new component in the appropriate directory
+2. Add a new state in the `App.js` file
+3. Add navigation logic to switch to the new screen
+
+### Styling
+
+The app uses React Native's StyleSheet for styling. Common styles are defined in the styles directory.
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+
+Project Maintainer - Muhammad Tahir (MERN Stack Developer) - [tahirsultanofficial@gmail.com]
+
+## Acknowledgments
+
+- [Expo](https://expo.dev/) - For the development framework
+- [React Native](https://reactnative.dev/) - For the mobile app framework
